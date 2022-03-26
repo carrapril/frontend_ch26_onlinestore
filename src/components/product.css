@@ -1,0 +1,24 @@
+.product{
+    border: 1px solid goldenrod;
+    display: inline-block;
+    margin: 5px;
+    padding: 8px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+}
+.product .price, .product .total{
+    display: block;
+}
+.product img{
+    width: 250px;
+    height: 400px;
+    transition: transform .2s; 
+}
+.product img:hover {
+    transform:scale(.5);
+    -ms-transform:scale(.5); /* IE 9 */
+    -moz-transform:scale(.5); /* Firefox */
+    -webkit-transform:scale(.5); /* Safari and Chrome */
+    -o-transform:scale(.5); /* Opera */
+}

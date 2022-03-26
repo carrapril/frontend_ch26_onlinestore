@@ -1,0 +1,73 @@
+.footer{
+    margin-top: .1rem;
+    padding: 1.5rem;
+    background-color: black;
+    opacity: 0.85;
+    color: goldenrod;
+    position: relative;
+    bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 0;
+    width: 100%;
+  }
+  .border{
+    border-style: dotted;
+    border: 2px solid;
+  }
+  input{
+    padding: 10px;
+    background-color: black;
+    color: rgb(235, 195, 64);
+    text-align: center;
+  }
+  p{
+    font-size:small;
+    font-weight: 700;
+    padding: 5px;
+    letter-spacing: 2px;
+  }
+  button{
+    background-color: rgb(235, 195, 64);
+    color:rgb(5, 5, 5);
+    padding: 5px;
+  }
+  .percentOff{
+    padding:10px;
+    display: block;
+    text-rendering: inherit;
+    width: 30%;
+    margin:auto;
+    margin-bottom: 2px;
+    
+    
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    color: goldenrod;
+}
+.grid-container > div{
+    text-align: center;
+    padding: 20px 0;
+}
+.grid-container h6{
+  color:white;
+}
+.grid-container a{
+    color: goldenrod;
+    line-height: 3px;
+}
+.item1  > ul{
+    list-style: none;
+    
+}
+.item2 > ul{
+    list-style: none;
+    
+
+}
+.item3 > ul{
+    list-style: none;
+}

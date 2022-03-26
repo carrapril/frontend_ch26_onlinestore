@@ -1,0 +1,25 @@
+.catalog{
+    background-color: white;
+}
+.catalog h2{
+    color:black;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.contentBanner{
+    border: none;
+    background-image: linear-gradient(to right, gold, rgb(229, 231, 226));
+    background: -webkit-linear-gradient(rgba(224, 224, 224, 0.8), rgba(231, 163, 16, 0.8)), url("https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 32px;
+    
+}
+.catalog h4{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
