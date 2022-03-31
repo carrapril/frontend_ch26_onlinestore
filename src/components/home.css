@@ -1,38 +1,37 @@
-*{
-    box-sizing: border-box;
-}
-.grid-container{
-    display: grid;
-    grid-template: repeat(3, 1fr) ;
-    width: 100%;
+.grid-container {
+  display: grid;
+  grid-template: repeat(3, 1fr);
+  width: 100%;
 }
 .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    padding: 5px;
-    text-align: center;
-    grid-template: repeat(3, 1fr) ;
-    width: 100%;
-  }
-  header{
-    height: 600px;
-    width: 100vw;
-    text-align: center;
-    background: black;
-    overflow: hidden;
-    background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
-    background: -webkit-linear-gradient(rgba(224, 224, 224, 0.8), rgba(231, 163, 16, 0.8)), url("https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80");
-    background: linear-gradient(rgba(219, 170, 34, 0.8), rgba(195, 55, 100, 0.8)), url("https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80"); 
-    background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 5px;
+  text-align: center;
+  grid-template: repeat(3, 1fr);
+  width: 100%;
+}
+header {
+  height: 600px;
+  width: 100vw;
+  text-align: center;
+  background: black;
+  overflow: hidden;
+  background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgba(224, 224, 224, 0.8),
+      rgba(231, 163, 16, 0.8)
+    ),
+    url("https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80");
+  background: linear-gradient(rgba(219, 170, 34, 0.8), rgba(195, 55, 100, 0.8)),
+    url("https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80");
+  background-size: cover;
+}
+section {
+  margin: auto;
+  width: 50%;
+}
+img {
+  align-content: center;
+}
 
-  }
-  section{
-      margin: auto;
-      width: 50%;
-      
-  }
-  img{
-      object-fit: cover;
-      
-  }
-  

@@ -79,16 +79,7 @@ var catalog = [
         discount: 10,
         image: "activewear2.jpg",
     },
-    {
-        _id: "random9",
-        title: "Active Shirt",
-        price: 39.99,
-        total: 49.99,
-        stock: 7,
-        category: "Clothes",
-        discount: 10,
-        image: "active3.jpg",
-    },
+    
     {
         _id: "random10",
             title: "Gold Layered Necklace",
@@ -159,7 +150,7 @@ var catalog = [
             stock: 7,
             category: "glasses",
             discount: 10,
-            image: "sunglass1.jpg",
+            image: "sunglass2.jpg",
     },
     {   _id: "random17",
             title: "Men Sunglasses",

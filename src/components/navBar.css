@@ -23,7 +23,7 @@
     justify-content: space-around;
 }
 .navBar button:hover{
-    background-color: rgb(235, 195, 64);
+    background-color:rgb(235, 195, 64);
     padding: 10px 10px;
 }
 .navBar input{

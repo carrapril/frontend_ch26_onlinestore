@@ -1,10 +1,20 @@
+body{
+  background-image: linear-gradient(to right, gold, rgb(229, 231, 226));
+}
 .admin {
+    margin-top:2% ;
     height: auto;
     padding: 20px 10px;
     display: flex;
     background-color: #fafafa;
+    background-image: linear-gradient(to right, gold, rgb(229, 231, 226));
+    
     min-height: 79vh;
   }
+
+  
+
+
   
   .admin section {
     flex: 1;
@@ -15,6 +25,9 @@
     padding: 20px;
     background-color: #fff;
     margin: 0 50px;
+    -webkit-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.54);
+    -moz-box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.54);
+    box-shadow: 0px 0px 28px -1px rgba(0,0,0,0.54);
   }
   
   .admin h3 {

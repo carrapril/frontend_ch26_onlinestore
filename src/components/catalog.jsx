@@ -30,15 +30,17 @@ const Catalog = () => {
                 <button>Shop Now</button>
             </div>
             <div>
-            <h2>Vacation Outfits</h2>
+            <div className="storeDiv1"><img src="/images/store-div1.JPG" width="800"></img></div>
+            <div className="storeDiv2"><img src="/images/store-div2.JPG"width="900" ></img></div>
             {products.map((prod) => (<Product key={prod._id}
             data={prod}
-            
             
             /> )
             )
             
             }
+
+            <div className="storeDiv3"><img src="/images/store-div3.JPG" width="800"></img></div>
 
             </div>
          
