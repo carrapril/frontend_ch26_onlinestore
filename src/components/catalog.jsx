@@ -7,18 +7,18 @@ import { useEffect, useState } from 'react';
 
 const Catalog = () => {
     let[products, setProducts] = useState([]);
-    const loadCatalog = () => {
+    const loadCatalog = async() => {
         console.log("Data Retrieved");
         let service = new DataService();
-        let data = service.getCatalog();
+        let data = await service.getCatalog();
         setProducts(data);
     };
 
     useEffect( () => {
         loadCatalog();
-    }
+    }, []);
 
-    );
+    
     
 
     return (

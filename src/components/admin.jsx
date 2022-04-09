@@ -1,5 +1,5 @@
 import "./admin.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DataService from "../services/dataService";
 
 const Admin = () => {
@@ -34,11 +34,14 @@ const Admin = () => {
   };
 
 
-  const saveCoupon = () => {
+  const saveCoupon = async () => {
     console.log(coupon);
 
+    let fixed = {...coupon};
+    fixed.discount = parseInt(coupon.discount); //change the discount to an integer 
+
     let service = new DataService();
-    service.saveCouponCode(coupon);
+    let resp = await service.saveCouponCode(fixed);
 
     //add it to the allCoupons NEVER USE allCoupons.push(coupon);
 
@@ -47,6 +50,22 @@ const Admin = () => {
     setAllCoupons(copy);
 
   };
+
+  const loadCoupons = async() => {
+    let service = new DataService();  
+    let all = await service.getCoupons();
+    setAllCoupons(all);
+
+  };
+
+// when cmp loads 
+
+  useEffect(() => {
+    loadCoupons();
+
+  }, []);
+
+
 
   return (
     <div className="admin">

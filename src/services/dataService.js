@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 var catalog = [
     {
         _id: "random1",
@@ -166,18 +168,29 @@ var catalog = [
 
 
 class DataService{
-    getCatalog(){
+    async getCatalog(){  //async and await goes together
+
         //this method should retrive the data from the server
 
-        //var catalog = request(); 
+        let resp = await axios.get("http://127.0.0.1:5000/api/catalog");
+        return resp.data;
 
-        return catalog;
+        //local data 
+        //return catalog;
     }
+
+    async getCoupons(){
+        console.log("setp 2");
+        let resp = await axios.get("http://127.0.0.1:5000/api/couponCode");
+        return resp.data;
+    }
+
     saveProduct(prod){
         console.log("Sending prod to server,,,,,Not");
     }
-    saveCouponCode(coupon){
-        console.log("coupon saved");
+    async saveCouponCode(code){
+        let resp = await axios.post("http://127.0.0.1:5000/api/couponCode", code);
+        return resp.data;
     }
 }
 
